@@ -13,6 +13,8 @@ massive( process.env.CONNECTION_STRING).then( dbInstance =>
 );
 
 
+// REVIEW ALL THIS
+
 
 app.post('/api/product', products_controller.create);
 app.get('/api/products', products_controller.getAll);
@@ -21,6 +23,7 @@ app.put('/api/product/:id', products_controller.update);
 app.delete('/api/product/:id', products_controller.delete);
 
 
+// REVIEW ALL THIS
 
 const port = process.env.PORT || 4040;
 app.listen( port, () => { 
